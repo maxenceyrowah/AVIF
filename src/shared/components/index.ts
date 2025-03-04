@@ -7,4 +7,3 @@ export * from "./IssuesSection";
 export * from "./NewsSection";
 export * from "./StatsSection";
 export * from "./TestimonialsSection";
-export * from "./TextReplaceAnimation";

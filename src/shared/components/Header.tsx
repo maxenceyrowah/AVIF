@@ -27,7 +27,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             {MENUS.map((item) => (
               <div
                 key={item.name}
@@ -60,7 +60,7 @@ const HeaderComponent = () => {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link
               to="/faire-un-don"
               className="bg-yellow-400 text-black font-bold py-2 px-6 hover:bg-yellow-300 transition duration-300 ml-2 
@@ -70,7 +70,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               className="text-white focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -87,7 +87,7 @@ const HeaderComponent = () => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-black animate-fadeIn">
+        <div className="lg:hidden bg-black animate-fadeIn">
           <div className="container mx-auto px-6 py-4">
             <nav className="flex flex-col space-y-4">
               {MENUS.map((item) => (
