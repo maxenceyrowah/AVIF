@@ -95,10 +95,12 @@ const HeroBannerComponent = () => {
             `}
           >
             Le 8 mars,
-            <span className="block mt-2 bg-gradient-to-r from-primary to-yellow-400 bg-clip-text font-avigea lg:text-[9rem] md:text-[5rem">
+            <span className="block mt-2 bg-gradient-to-r from-primary to-yellow-400 bg-clip-text font-avigea lg:text-[9rem] md:text-[5rem]">
               Tout pour la femme, Tous pour la femme
             </span>
-            <span className="font-avigea">AVIF</span>
+            <span className="font-avigea">
+              AVIF s’engage chaque jour pour :
+            </span>
           </h1>
 
           <div
@@ -110,13 +112,13 @@ const HeroBannerComponent = () => {
           ></div>
 
           <p
-            className={`text-xl md:text-2xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
+            className={`text-xl md:text-3xl mb-10 leading-relaxed transition-all duration-1000 delay-500 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
             }`}
           >
-            Autonomisation, Valorisation et Insertion des Femmes
+            l’autonomisation, la valorisation et l’insertion des femmes.
           </p>
 
           <div
