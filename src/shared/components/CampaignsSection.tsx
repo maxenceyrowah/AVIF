@@ -13,28 +13,28 @@ const campaigns: Campaign[] = [
     title: "Mettre fin aux mariages forcés",
     description:
       "Notre campagne vise à éliminer les mariages d'enfants et les mariages forcés qui affectent des millions de filles chaque année.",
-    icon: <Shield className="h-10 w-10 text-yellow-400" />,
+    icon: <Shield className="h-10 w-10 text-secondary" />,
     link: "/campaigns/end-forced-marriages",
   },
   {
     title: "Défendre les défenseures",
     description:
       "Nous protégeons les femmes défenseures des droits humains qui risquent leur vie pour la justice et l'égalité.",
-    icon: <Heart className="h-10 w-10 text-yellow-400" />,
+    icon: <Heart className="h-10 w-10 text-secondary" />,
     link: "/campaigns/defend-defenders",
   },
   {
     title: "Éducation pour toutes",
     description:
       "Nous luttons pour que chaque fille ait accès à une éducation de qualité, sans discrimination ni obstacles.",
-    icon: <BookOpen className="h-10 w-10 text-yellow-400" />,
+    icon: <BookOpen className="h-10 w-10 text-secondary" />,
     link: "/campaigns/education-for-all",
   },
   {
     title: "Égalité économique",
     description:
       "Nous travaillons pour éliminer les écarts de salaire et garantir l'accès égal aux opportunités économiques.",
-    icon: <Globe className="h-10 w-10 text-yellow-400" />,
+    icon: <Globe className="h-10 w-10 text-secondary" />,
     link: "/campaigns/economic-equality",
   },
 ];

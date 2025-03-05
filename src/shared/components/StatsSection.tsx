@@ -24,18 +24,18 @@ const StatsComponent = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-secondary text-white py-20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="p-6 hover:bg-gray-900 transition-colors duration-300 rounded-lg"
+              className="group p-6 hover:bg-primary group-hover:text-secondary transition-colors duration-300 rounded-lg "
             >
-              <div className="text-6xl font-bold mb-2 text-primary">
+              <div className="text-6xl font-bold mb-2 text-primary group-hover:text-secondary">
                 {stat.value}
               </div>
-              <div className="text-xl uppercase tracking-wide">
+              <div className="text-xl uppercase tracking-wide group-hover:text-secondary">
                 {stat.label}
               </div>
             </div>

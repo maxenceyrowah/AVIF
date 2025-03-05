@@ -12,6 +12,7 @@ module.exports = {
       // colors
       colors: {
         primary: "#fff7C5",
+        secondary: "#60241e",
       },
 
       keyframes: {

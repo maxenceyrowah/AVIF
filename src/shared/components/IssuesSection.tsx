@@ -34,7 +34,7 @@ const IssuesComponent = () => {
           <h2 className="text-5xl font-bold text-gray-900 mb-4 font-montserrat">
             Enjeux Prioritaires
           </h2>
-          <div className="w-24 h-1 bg-yellow-400 mb-8 rounded-full"></div>
+          <div className="w-24 h-1 bg-yellow-300 mb-8 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
             Nous nous concentrons sur les problèmes les plus urgents affectant
             les droits des femmes dans le monde entier.
@@ -58,7 +58,7 @@ const IssuesComponent = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
               </div>
-              <div className="p-8 border-l-4 border-yellow-400">
+              <div className="p-8 border-l-4 border-secondary">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-500 transition-colors">
                   {issue.title}
                 </h3>
