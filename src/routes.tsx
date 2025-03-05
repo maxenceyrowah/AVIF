@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 
 import AppLayout from "@components/AppLoyout";
-
 import * as features from "./features";
+import { ScrollToTop } from "./shared/utils";
 
 const routes = () => {
   const router = createBrowserRouter([
@@ -15,7 +15,8 @@ const routes = () => {
       path: "/",
       errorElement: <features.ErrorBoundary />,
       element: (
-        <AppLayout>
+        <AppLayout key="app-layout">
+          <ScrollToTop />
           <Outlet />
         </AppLayout>
       ),
@@ -24,7 +25,15 @@ const routes = () => {
           element: <Navigate to="/acceuil" replace />,
           index: true,
         },
-        { path: "/acceuil", element: <features.LandingPage /> },
+        {
+          path: "/acceuil",
+          element: (
+            <>
+              <ScrollToTop />
+              <features.LandingPage />
+            </>
+          ),
+        },
         ...features.inspirerRoutes,
         ...features.defendreRoutes,
         ...features.apprendreRoutes,

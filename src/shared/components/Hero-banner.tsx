@@ -40,7 +40,7 @@ const HeroBannerComponent = () => {
   }, [currentBg]);
 
   return (
-    <div className="relative bg-black text-white overflow-hidden h-screen w-full">
+    <div className="relative bg-black text-white overflow-hidden w-full">
       {backgrounds.map((bg, index) => (
         <div key={index} className="inset-0 z-0 absolute">
           <img
@@ -84,7 +84,7 @@ const HeroBannerComponent = () => {
       </button>
 
       <div className="container mx-auto px-6 py-32 md:py-40 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl inline">
           <h1
             className={`
             text-5xl md:text-7xl font-bold leading-tight mb-6
@@ -95,7 +95,7 @@ const HeroBannerComponent = () => {
             `}
           >
             Le 8 mars,
-            <span className="block mt-2 bg-gradient-to-r from-yellow-400 to-white bg-clip-text">
+            <span className="block mt-2 bg-gradient-to-r from-primary to-yellow-400 bg-clip-text font-avigea">
               Tout pour la femme, Tous pour la femme
             </span>
             AVIF
@@ -126,7 +126,7 @@ const HeroBannerComponent = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <button className="bg-yellow-400 text-black font-bold py-4 px-8 hover:bg-yellow-300 transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <button className="bg-primary text-black font-bold py-4 px-8 hover:bg-yellow-300 transition-all duration-300 hover:scale-105 flex items-center justify-center">
               AGIR MAINTENANT <ArrowRight className="ml-2 h-5 w-5" />
             </button>
             <button className="bg-transparent border-2 border-white font-bold py-4 px-8 hover:bg-white hover:text-black transition-all duration-300 hover:scale-105">

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Avigea;
+  src: url("/fonts/avigea.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf") format("opentype");
+}

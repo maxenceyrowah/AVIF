@@ -1,6 +1,10 @@
 import Header from "./Header";
 
-const AppLayout = ({ children }: { children: JSX.Element }) => {
+const AppLayout = ({
+  children,
+}: {
+  children: React.ReactNode[] | React.ReactNode;
+}) => {
   return (
     <>
       <Header />
