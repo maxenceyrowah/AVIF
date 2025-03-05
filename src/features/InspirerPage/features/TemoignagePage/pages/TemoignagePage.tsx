@@ -9,6 +9,19 @@ const TemoignagePage = () => {
   const [selectedWoman, setSelectedWoman] = useState<IWomenInspiration | null>(
     null
   );
+  const [filterCategory, setFilterCategory] = useState("all");
+
+  const categories = [
+    { id: "all", label: "Toutes" },
+    { id: "activist", label: "Militantes" },
+    { id: "pioneer", label: "Pionnières" },
+    { id: "leader", label: "Leaders" },
+  ];
+
+  const filteredWomen =
+    filterCategory === "all"
+      ? INSPIRING_WOMEN
+      : INSPIRING_WOMEN.filter((woman) => woman.category === filterCategory);
 
   return (
     <>
@@ -21,12 +34,39 @@ const TemoignagePage = () => {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto relative z-10"
         >
-          <h1 className="text-5xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-red-200">
-            Témoignages et Portraits de Femmes Inspirantes
-          </h1>
+          <div className="mb-16">
+            <h1 className="mb-8 text-4xl font-bold text-gray-900">
+              Témoignages et Portraits
+            </h1>
+            <div className="w-20 h-1 bg-yellow-400 mb-8"></div>
+          </div>
+
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-gray-700 mb-6 mx-4">
+              Découvrez les parcours exceptionnels de femmes qui ont marqué
+              l'histoire et continuent d'inspirer la lutte pour l'égalité des
+              droits. Leurs témoignages nous rappellent l'importance de célébrer
+              non seulement le 8 mars, mais chaque jour de l'année.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              {categories.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => setFilterCategory(category.id)}
+                  className={`px-6 py-2 rounded-full transition-all ${
+                    filterCategory === category.id
+                      ? "bg-primary text-black"
+                      : "bg-yellow-200 text-black hover:bg-primary"
+                  }`}
+                >
+                  {category.label}
+                </button>
+              ))}
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {INSPIRING_WOMEN.map((woman, index) => (
+            {filteredWomen.map((woman, index) => (
               <motion.div
                 key={woman.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -53,6 +93,13 @@ const TemoignagePage = () => {
                       <p className="text-gray-700 leading-relaxed">
                         {woman.description}
                       </p>
+                      {woman.impactQuotes && (
+                        <div className="mt-4 p-3 bg-purple-50 rounded-lg">
+                          <p className="text-purple-700 italic">
+                            "{woman.impactQuotes[0]}"
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -107,12 +154,21 @@ const TemoignagePage = () => {
               <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
                 {selectedWoman.role}
               </span>
+
+              {selectedWoman.impactQuotes && (
+                <div className="mb-6 p-4 bg-purple-50 rounded-xl">
+                  <blockquote className="text-xl italic text-purple-800">
+                    "{selectedWoman.impactQuotes[0]}"
+                  </blockquote>
+                </div>
+              )}
+
               <p className="text-gray-700 leading-relaxed mb-6">
                 {selectedWoman.longDescription}
               </p>
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-purple-900 mb-3">
-                  Key Achievements
+                  Réalisations Marquantes
                 </h3>
                 <ul className="list-disc list-inside space-y-2">
                   {selectedWoman.achievements.map((achievement, index) => (
@@ -124,7 +180,7 @@ const TemoignagePage = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-purple-900 mb-3">
-                  Bibliography
+                  Parcours de Vie
                 </h3>
                 <div className="bg-purple-50 rounded-xl p-4">
                   <ul className="list-none space-y-2">

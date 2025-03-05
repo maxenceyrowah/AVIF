@@ -3,11 +3,13 @@ const FooterComponent = () => {
     <footer className="bg-black text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* a propos */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-yellow-400">À PROPOS</h3>
+            <h3 className="text-xl font-bold mb-6 text-primary">À PROPOS</h3>
             <p className="text-gray-400 mb-6">
-              Nous sommes un mouvement mondial de personnes qui défendent les
-              droits humains des femmes et des filles.
+              Nous sommes un groupe d'étudiants passionnés qui avons créé ce
+              site dans le cadre de notre formation pour promouvoir l'égalité
+              des genres.
             </p>
             <div className="flex space-x-4">
               <a
@@ -59,8 +61,10 @@ const FooterComponent = () => {
               </a>
             </div>
           </div>
+
+          {/* agir */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-yellow-400">AGIR</h3>
+            <h3 className="text-xl font-bold mb-6 text-primary">AGIR</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
                 <a href="#" className="hover:text-yellow-400 transition">
@@ -89,8 +93,10 @@ const FooterComponent = () => {
               </li>
             </ul>
           </div>
+
+          {/* explorer */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-yellow-400">EXPLORER</h3>
+            <h3 className="text-xl font-bold mb-6 text-primary">EXPLORER</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
                 <a href="#" className="hover:text-yellow-400 transition">
@@ -119,26 +125,28 @@ const FooterComponent = () => {
               </li>
             </ul>
           </div>
+
+          {/* constact */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-yellow-400">CONTACT</h3>
+            <h3 className="text-xl font-bold mb-6 text-primary">CONTACT</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>1 Rue des Droits Humains</li>
-              <li>75001 Paris, France</li>
-              <li>contact@droitsfemmes.org</li>
-              <li>+33 1 23 45 67 89</li>
+              <li>LPLIA, Trechville</li>
+              <li>contact@e2c.org</li>
             </ul>
+
             <form className="mt-6">
               <input
                 type="email"
                 placeholder="Votre email"
                 className="w-full bg-gray-900 text-white px-4 py-3 mb-2 focus:outline-none"
               />
-              <button className="w-full bg-yellow-400 text-black font-bold py-3 hover:bg-yellow-300 transition duration-300">
+              <button className="w-full bg-primary text-black font-bold py-3 hover:bg-yellow-300 transition duration-300">
                 S'ABONNER
               </button>
             </form>
           </div>
         </div>
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; 2025 Droits des Femmes. Tous droits réservés.</p>
         </div>

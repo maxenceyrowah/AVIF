@@ -1,6 +1,6 @@
 const CTASection = () => {
   return (
-    <div className="bg-yellow-400 py-20">
+    <div className="bg-yellow-200 py-20">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-black mb-6">
           Rejoignez le mouvement

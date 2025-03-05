@@ -6,5 +6,7 @@ export interface IWomenInspiration {
   description: string;
   longDescription: string;
   achievements: string[];
+  impactQuotes: string[];
   bibliography: string[];
+  category: string;
 }
