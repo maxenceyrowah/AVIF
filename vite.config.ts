@@ -9,6 +9,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      "@": "/src",
+      "@assets": "/src/shared/assets",
+      "@models": "/src/shared/models",
+      "@constantes": "/src/shared/constantes",
       "@components": "/src/shared/components",
     },
   },

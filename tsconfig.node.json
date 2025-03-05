@@ -20,6 +20,9 @@
 
     /* Import resolution */
     "paths": {
+      "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@shared/*": ["src/shared/*"],
       "@components/*": ["src/shared/components/*"]
     },
     "baseUrl": "./"

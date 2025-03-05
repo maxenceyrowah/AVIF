@@ -40,9 +40,9 @@ const HeroBannerComponent = () => {
   }, [currentBg]);
 
   return (
-    <div className="relative bg-black text-white overflow-hidden">
+    <div className="relative bg-black text-white overflow-hidden h-screen w-full">
       {backgrounds.map((bg, index) => (
-        <div key={index} className="absolute inset-0 z-0">
+        <div key={index} className="inset-0 z-0 absolute">
           <img
             src={bg}
             alt="Women's rights"
@@ -74,6 +74,7 @@ const HeroBannerComponent = () => {
       >
         <ArrowRight className="w-6 h-6 transform rotate-180" />
       </button>
+
       <button
         onClick={handleNextBackground}
         className="md:block hidden absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/50 p-2 rounded-full hover:bg-black/70 transition-all"
