@@ -9,19 +9,6 @@ const TemoignagePage = () => {
   const [selectedWoman, setSelectedWoman] = useState<IWomenInspiration | null>(
     null
   );
-  const [filterCategory, setFilterCategory] = useState("all");
-
-  const categories = [
-    { id: "all", label: "Toutes" },
-    { id: "activist", label: "Militantes" },
-    { id: "pioneer", label: "Pionnières" },
-    { id: "leader", label: "Leaders" },
-  ];
-
-  const filteredWomen =
-    filterCategory === "all"
-      ? INSPIRING_WOMEN
-      : INSPIRING_WOMEN.filter((woman) => woman.category === filterCategory);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -74,35 +61,18 @@ const TemoignagePage = () => {
               droits. Leurs témoignages nous rappellent l'importance de célébrer
               non seulement le 8 mars, mais chaque jour de l'année.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {categories.map((category) => (
-                <motion.button
-                  key={category.id}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setFilterCategory(category.id)}
-                  className={`px-6 py-2 rounded-full transition-all ${
-                    filterCategory === category.id
-                      ? "bg-primary text-black"
-                      : "bg-yellow-200 text-black hover:bg-primary"
-                  }`}
-                >
-                  {category.label}
-                </motion.button>
-              ))}
-            </div>
           </motion.div>
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={filterCategory}
+              // key={filterCategory}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
             >
-              {filteredWomen.map((woman) => (
+              {INSPIRING_WOMEN.map((woman) => (
                 <motion.div
                   key={woman.id}
                   variants={itemVariants}
