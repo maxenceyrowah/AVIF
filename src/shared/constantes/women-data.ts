@@ -170,12 +170,12 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
-    // image: images.dele,
+    image: "/assets/images/dele.jpg",
   },
   {
-    name: "Koné Siata",
+    name: "Koné Assata",
     fonction: "Informaticienne Développeuse web FullStack  certifiée",
-    description: `Koné Siata est une développeuse web Full-Stack certifiée, passionnée par la création d’applications dynamiques et performantes. Avec une solide formation en informatique et plusieurs années d’expérience dans le développement web, elle a su se démarquer par son expertise technique et sa capacité à concevoir des solutions innovantes adaptées aux besoins des entreprises et des utilisateurs.
+    description: `Koné Assata est une développeuse web Full-Stack certifiée, passionnée par la création d’applications dynamiques et performantes. Avec une solide formation en informatique et plusieurs années d’expérience dans le développement web, elle a su se démarquer par son expertise technique et sa capacité à concevoir des solutions innovantes adaptées aux besoins des entreprises et des utilisateurs.
 
 Parcours académique et certifications
 Dès son plus jeune âge,  s’est intéressée aux technologies numériques et à la programmation. Elle a suivi des études en informatique, obtenant un diplôme en développement logiciel et en ingénierie informatique. Toujours avide d’apprendre, elle a poursuivi son parcours en obtenant des certifications reconnues dans le domaine du développement web Full-Stack, attestant de sa maîtrise des langages et frameworks les plus utilisés tels que JavaScript, TypeScript, React.js, Node.js, Next.js, et MongoDB.
@@ -201,7 +201,7 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, [Nom] continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
-    // image: images.Kone,
+    image: "/assets/images/Kone.jpeg",
   },
   {
     name: "Timité Mariam",
@@ -232,62 +232,6 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, [Nom] continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
-    // image: images.timite,
-  },
-  {
-    name: "Constance Yai",
-    fonction: "Féministe ivoirienne, auteure, Professeure",
-    description: `Constance Yaï est une féministe ivoirienne, auteure, Professeure spécialisée dans la rééducation des troubles du langage. Elle est la Fondatrice de l'Association Ivoirienne des Droits des Femmes (AIDF) et ancienne ministre de la Solidarité et de la Promotion de la Femme en Côte d’Ivoire.
-Au cours d’un voyage au Sénégal, notre Chanceline Mevowanou a rencontré Constance Yaï qui participait à une session aux côtés de plusieurs jeunes féministes du Niger, de la Côte d’ivoire et du Bénin. Dans cette conversation, elle nous parle de la naissance de son engagement féministe et de sa vision pour construire un mouvement féministe intergénérationnel en Afrique
-`,
-    // image: images.constance_Yai,
-  },
-  {
-    name: "Wangari Maathai ",
-    fonction: "Domaine : Environnement et droits des femmes",
-    description: `Wangari Maathai était une militante écologiste et la première femme africaine à recevoir le prix Nobel de la paix en 2004. Fondatrice du mouvement "Green Belt", elle a consacré sa vie à la protection de l'environnement et à l'autonomisation des femmes au Kenya. Maathai a encouragé la plantation d'arbres pour lutter contre la déforestation et a plaidé pour les droits des femmes, considérant que la protection de l'environnement passait par l'éducation et l'émancipation des femmes. Son héritage continue d'inspirer des mouvements environnementaux dans le monde entier.`,
-    // image: images.wangari_Maathai,
-  },
-  {
-    name: "Yvette Bonny",
-    fonction: "Pédiatre et hématologue émérite",
-    description: `Dre Bonny est née à Port-au-Prince, en Haïti, en 1938. Après avoir fait des études médicales dans sa ville natale, à Paris et ensuite à Montréal, elle s’installe au Québec lorsqu’elle est embauchée par l’hôpital Ste-Justine en 1962. En 1970, elle poursuit sa carrière à l’Hôpital Maisonneuve-Rosemont. En 1980, elle réalise la première greffe osseuse au Québec, elle sera d’ailleurs responsable, jusqu’en 1998, de l’Unité provinciale de transplantation médullaire pédiatrique et réalisera toutes les greffes de moelle osseuse des enfants québécois.
-
-Toujours très engagée socialement, Dre Bonny, surnommée également la Patch Adams pour son humour et sa grande compassion, travaille à la lutte contre la pauvreté et l’abandon scolaire des jeunes immigrants haïtiens. `,
-    // image: images.yvette_Bonny,
-  },
-  {
-    name: "Oprah Winfrey",
-    fonction: "Fondatrice et Directrice",
-    description: `On ne peut passer sous silence Oprah Winfrey, première femme noire milliardaire. Dans les années 70, âgée d’à peine 19 ans, elle devenait la première femme noire à animer le bulletin de nouvelles à Nashville. Elle est également la première femme afro-américaine à posséder sa propre compagnie de production. Enfin, elle a mis sur pied une école pour jeunes filles en Afrique du Sud en 1997 afin de leur offrir l’éducation nécessaire pour les aider à s’émanciper.`,
-    // image: images.oprah_Winfrey,
-  },
-  {
-    name: "Fabienne Colas",
-    fonction: "Manequin",
-    description: `Fabienne Colas commence d’abord sa carrière comme mannequin, elle est d’ailleurs couronnée Miss Haïti en 2000. Elle entame ensuite une carrière cinématographique, en Haïti et ensuite au Québec, où on la voit entre autres dans L’Auberge du chien noir et Virginie. Elle est aujourd’hui présidente et fondatrice de plusieurs festivals internationaux populaires entre autres, le Festival international film Black Montréal (FIFBM), le Toronto Black Film Festival (TBFF) et le Festival Fade to Black de Montréal, consacré à la célébration du mois de l'histoire des Noirs.
-
-Fabienne Colas est une mentore pour des jeunes de divers milieux et intervient régulièrement auprès des jeunes de milieux défavorisés dans les écoles et les centres communautaires sur les questions de persévérance scolaire, de réussite académique, d'estime de soi et d'excellence. Elle continue son combat pour la représentation de la diversité sur les écrans et dans les médias, et pour l’égalité des chances pour tous et toutes.`,
-    // image: images.fabienne_Colas,
-  },
-  {
-    name: "Toni Morrison",
-    fonction: "Romancière, éditrice et professeur",
-    description: `Toni Morrison est née aux États-Unis le 18 février 1931 sous le nom de Chloe Anthony Wofford Morrison. L'essayiste, romancière, éditrice et professeur émérite de l'université de Princeton a été surnommée « Toni » pendant ses études à l'université Howard (d'après son nom de baptême, Anthony).
-
-Après avoir obtenu son diplôme et sa maîtrise à l'université Cornell, Morrison est retournée à Howard pour enseigner.
-
-Plus tard, en tant que première femme noire éditrice pour Random House (poste qu'elle a occupé de 1967 à 1983), elle a mené à bien des œuvres littéraires telles que les autobiographies d'Angela Davis et de Mohammed Ali.
-
-Son premier roman, The Bluest Eye, dont l'action se déroule dans sa ville natale de Lorain, dans l'Ohio, est publié en 1970. Ce livre explore sans détour les thèmes du genre et du racisme intériorisé, lançant Toni Morrison sur une voie littéraire prolifique qui lui vaudra finalement plusieurs distinctions.
-
-Mme Morrison a également remporté le prix Pulitzer de la fiction pour son roman « Beloved » (1987), ainsi que de nombreuses autres récompenses tout au long de sa riche carrière.
-
-Elle a notamment été nommée « légende vivante » par le Congrès et s'est vu décerner la médaille présidentielle de la liberté par Barack Obama en 2012.
-
-L'œuvre de Morrison a inspiré toute une génération d'écrivains et a continué d'influencer les écrivains contemporains et les artistes grâce à son intérêt pour la vie afro-américaine et à son commentaire sur les relations raciales.
-
-Toni Morrison est décédée le 5 août 2019 à l'âge de 88 ans, à New York.`,
-    // image: images.toni_Morrison,
+    image: "/assets/images/Timite.jpeg",
   },
 ];

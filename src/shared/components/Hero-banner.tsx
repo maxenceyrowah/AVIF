@@ -95,7 +95,7 @@ const HeroBannerComponent = () => {
             `}
           >
             Le 8 mars,
-            <span className="block mt-2 bg-gradient-to-r from-primary to-yellow-400 bg-clip-text font-avigea lg:text-[9rem] md:text-[5rem]">
+            <span className="block mt-2 bg-gradient-to-r from-primary to-yellow-400 bg-clip-text font-avigea lg:text-[5rem] md:text-[3rem]">
               Tout pour la femme, Tous pour la femme
             </span>
             <span className="font-avigea">
