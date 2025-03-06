@@ -90,8 +90,10 @@ const MentoratPage = () => {
                           "Automatisation de la femme",
                         ][index - 1]
                       }
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
                     ></iframe>
                   </div>
                   <p className="mt-4 text-black font-semibold text-center">
