@@ -98,7 +98,7 @@ export const INSPIRING_WOMEN = [
 export const WOMEN_DATA = [
   {
     name: "Sakanoko Siata Ouattara",
-    fonction: "C.D.P Formation professionnelle et insertion des jeunes",
+    fonction: "Cheffe de Projet E2C_TIC Cote d'Ivoire",
     description: `
 Un parcours au service du développement
 Madame Sakanoko Siata Ouattara est une figure clé du développement de la formation professionnelle en Côte d'Ivoire. Engagée dans l’accompagnement des jeunes vers l’emploi, elle œuvre pour leur insertion à travers des programmes adaptés aux réalités du marché du travail.
@@ -121,7 +121,7 @@ Grâce à son leadership et sa vision, elle inspire de nombreux jeunes et profes
     image: "/assets/images/mdm_Sakanoko.jpg",
   },
   {
-    name: "Traoré Kadidjatou",
+    name: "Ana Khadidjah Touré",
     fonction: "Directrice, Créatrice designer en infographie",
     description: `Passionnée par l’infographie et la création visuelle, Traoré Kadidjatou est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle. Son sens de la créativité et de l’innovation lui permet de concevoir des affiches publicitaires percutantes, aidant ainsi les marques à améliorer leur visibilité et à dynamiser leurs ventes.
 Dotée d’un excellent relationnel et d’un esprit collaboratif, Kadidjatou sait mobiliser une équipe autour d’un objectif commun, apportant à chaque projet une vision unique et originale.
@@ -137,10 +137,16 @@ Toujours en quête d’évolution, elle ambitionne de lancer sa propre agence de
   },
   {
     name: "Etilié Philomene",
-    fonction: "Féministe ivoirienne, auteure, Professeure",
-    description: `Constance Yaï est une féministe ivoirienne, auteure, Professeure spécialisée dans la rééducation des troubles du langage. Elle est la Fondatrice de l'Association Ivoirienne des Droits des Femmes (AIDF) et ancienne ministre de la Solidarité et de la Promotion de la Femme en Côte d’Ivoire.
-Au cours d’un voyage au Sénégal, notre Chanceline Mevowanou a rencontré Constance Yaï qui participait à une session aux côtés de plusieurs jeunes féministes du Niger, de la Côte d’ivoire et du Bénin. Dans cette conversation, elle nous parle de la naissance de son engagement féministe et de sa vision pour construire un mouvement féministe intergénérationnel en Afrique
-`,
+    fonction: "Proviseure du lycée Technique de Cocody",
+    description: `La proviseure du lycée Technique de Cocody, Madame Etilié Philomène, est une éducatrice passionnée et une leader reconnue dans le domaine de l'enseignement. Née en Côte d'Ivoire, elle a grandi dans un environnement où l'importance de l'éducation était primordiale. Dès son plus jeune âge, elle a montré un intérêt particulier pour les sciences et les mathématiques, des domaines qui allaient devenir sa spécialité. Après avoir obtenu son baccalauréat scientifique, elle poursuit des études supérieures à l'Université Félix Houphouët-Boigny d’Abidjan, où elle obtient une maîtrise en sciences de l’éducation.
+
+Forte de son diplôme, elle débute sa carrière en tant qu’enseignante de mathématiques dans divers établissements secondaires. Grâce à sa rigueur académique et son approche innovante de l'enseignement, elle se distingue rapidement et gagne la reconnaissance de ses pairs et de ses élèves. Elle est notamment connue pour sa capacité à rendre les mathématiques accessibles à tous, en mettant l'accent sur la compréhension profonde des concepts plutôt que sur la simple mémorisation.
+
+Au fil des années, Madame Etilié gravit les échelons du système éducatif ivoirien. Elle occupe successivement des postes de responsabilité, allant de conseillère pédagogique à directrice adjointe dans plusieurs établissements. Son leadership naturel, sa gestion efficace des équipes pédagogiques et sa vision stratégique pour l'avenir de l'éducation font d'elle une figure incontournable dans le milieu éducatif ivoirien.
+
+En 2020, elle est nommée proviseure du lycée Technique de Cocody, un établissement de renom situé à Abidjan. Dans ce rôle, elle met en place des réformes visant à moderniser l'enseignement technique et à préparer les élèves aux défis du monde professionnel. Sous sa direction, le lycée a développé des partenariats avec des entreprises locales et internationales, offrant ainsi aux élèves des opportunités de stages et de formations en alternance. Elle milite également pour une plus grande inclusion des filles dans les filières techniques, un domaine historiquement dominé par les garçons.
+
+Madame Etilié Philomène incarne l’engagement, l’innovation et l’excellence. Elle est convaincue que l'éducation est la clé du développement personnel et national, et elle œuvre sans relâche pour offrir aux jeunes Ivoiriens une éducation de qualité, capable de répondre aux besoins d’un monde en constante évolution.`,
     image: "/assets/images/proviseure.jpg",
   },
   {
@@ -149,12 +155,12 @@ Au cours d’un voyage au Sénégal, notre Chanceline Mevowanou a rencontré Con
     description: `Essis Helène est une développeuse web Full-Stack certifiée, passionnée par la création d’applications dynamiques et performantes. Avec une solide formation en informatique et plusieurs années d’expérience dans le développement web, elle a su se démarquer par son expertise technique et sa capacité à concevoir des solutions innovantes adaptées aux besoins des entreprises et des utilisateurs.
 
 Parcours académique et certifications
-Dès son plus jeune âge, [Nom] s’est intéressée aux technologies numériques et à la programmation. Elle a suivi des études en informatique, obtenant un diplôme en développement logiciel et en ingénierie informatique. Toujours avide d’apprendre, elle a poursuivi son parcours en obtenant des certifications reconnues dans le domaine du développement web Full-Stack, attestant de sa maîtrise des langages et frameworks les plus utilisés tels que JavaScript, TypeScript, React.js, Node.js, Next.js, et MongoDB.
+Dès son plus jeune âge,  s’est intéressée aux technologies numériques et à la programmation. Elle a suivi des études en informatique, obtenant un diplôme en développement logiciel et en ingénierie informatique. Toujours avide d’apprendre, elle a poursuivi son parcours en obtenant des certifications reconnues dans le domaine du développement web Full-Stack, attestant de sa maîtrise des langages et frameworks les plus utilisés tels que JavaScript, TypeScript, React.js, Node.js, Next.js, et MongoDB.
 
 Sa volonté de perfectionnement l’a également poussée à se spécialiser dans des domaines tels que les architectures cloud, les bases de données NoSQL et SQL, ainsi que les bonnes pratiques DevOps. Grâce à ces compétences, elle est en mesure de concevoir des applications robustes et scalables répondant aux exigences des entreprises modernes.
 
 Expérience professionnelle
-Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, [Nom] a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
+Avec plusieurs années d’expérience en tant que développeuse web Full-Stack,  a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
 
 Dans son rôle, elle maîtrise aussi bien le développement front-end, en créant des interfaces utilisateur réactives et intuitives avec React.js, Next.js et Bootstrap, que le développement back-end, où elle construit des API performantes en utilisant Node.js, Express et MongoDB. Son expertise couvre également l’intégration des bonnes pratiques en matière de sécurité web, de performance et d’accessibilité.
 
@@ -166,7 +172,7 @@ Expérience avec les outils CI/CD, Docker, Git et GitHub Actions.
 Respect des standards de sécurité, performance et accessibilité web.
 Collaboration avec des équipes Agile et utilisation de méthodologies Scrum/Kanban.
 Engagement et vision
-Au-delà de son rôle technique, [Nom] est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
+Au-delà de son rôle technique,  est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
 
 En tant que mentore et formatrice, elle accompagne les nouveaux développeurs dans leur apprentissage, les aidant à acquérir des compétences solides et à évoluer dans un domaine en constante mutation.
 
@@ -185,7 +191,7 @@ Dès son plus jeune âge,  s’est intéressée aux technologies numériques et 
 Sa volonté de perfectionnement l’a également poussée à se spécialiser dans des domaines tels que les architectures cloud, les bases de données NoSQL et SQL, ainsi que les bonnes pratiques DevOps. Grâce à ces compétences, elle est en mesure de concevoir des applications robustes et scalables répondant aux exigences des entreprises modernes.
 
 Expérience professionnelle
-Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, [Nom] a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
+Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
 
 Dans son rôle, elle maîtrise aussi bien le développement front-end, en créant des interfaces utilisateur réactives et intuitives avec React.js, Next.js et Bootstrap, que le développement back-end, où elle construit des API performantes en utilisant Node.js, Express et MongoDB. Son expertise couvre également l’intégration des bonnes pratiques en matière de sécurité web, de performance et d’accessibilité.
 
@@ -197,12 +203,12 @@ Expérience avec les outils CI/CD, Docker, Git et GitHub Actions.
 Respect des standards de sécurité, performance et accessibilité web.
 Collaboration avec des équipes Agile et utilisation de méthodologies Scrum/Kanban.
 Engagement et vision
-Au-delà de son rôle technique, [Nom] est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
+Au-delà de son rôle technique, est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
 
 En tant que mentore et formatrice, elle accompagne les nouveaux développeurs dans leur apprentissage, les aidant à acquérir des compétences solides et à évoluer dans un domaine en constante mutation.
 
 Conclusion
-Grâce à son expertise, son engagement et sa passion pour l’innovation, [Nom] continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
+Grâce à son expertise, son engagement et sa passion pour l’innovation, continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/Kone.jpeg",
   },
   {
@@ -216,7 +222,7 @@ Dès son plus jeune âge, s’est intéressée aux technologies numériques et �
 Sa volonté de perfectionnement l’a également poussée à se spécialiser dans des domaines tels que les architectures cloud, les bases de données NoSQL et SQL, ainsi que les bonnes pratiques DevOps. Grâce à ces compétences, elle est en mesure de concevoir des applications robustes et scalables répondant aux exigences des entreprises modernes.
 
 Expérience professionnelle
-Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, [Nom] a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
+Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
 
 Dans son rôle, elle maîtrise aussi bien le développement front-end, en créant des interfaces utilisateur réactives et intuitives avec React.js, Next.js et Bootstrap, que le développement back-end, où elle construit des API performantes en utilisant Node.js, Express et MongoDB. Son expertise couvre également l’intégration des bonnes pratiques en matière de sécurité web, de performance et d’accessibilité.
 
@@ -228,12 +234,12 @@ Expérience avec les outils CI/CD, Docker, Git et GitHub Actions.
 Respect des standards de sécurité, performance et accessibilité web.
 Collaboration avec des équipes Agile et utilisation de méthodologies Scrum/Kanban.
 Engagement et vision
-Au-delà de son rôle technique, [Nom] est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
+Au-delà de son rôle technique,  est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
 
 En tant que mentore et formatrice, elle accompagne les nouveaux développeurs dans leur apprentissage, les aidant à acquérir des compétences solides et à évoluer dans un domaine en constante mutation.
 
 Conclusion
-Grâce à son expertise, son engagement et sa passion pour l’innovation, [Nom] continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
+Grâce à son expertise, son engagement et sa passion pour l’innovation,  continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/Timite.jpeg",
   },
 ];

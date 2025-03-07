@@ -95,8 +95,9 @@ yarn preview
 Contributors:
 
 - Project Team Members (Add names here)
-Name: Kouloman Youssouf COULIBALY
-Email: koulomanyoussouf1704@gmail.com
+
+- Kouloman Youssouf COULIBALY | koulomanyoussouf1704@gmail.com
+- Akou Fulgence | fulgencebeugre49@gmail.com
 
 To contribute to this project:
 
