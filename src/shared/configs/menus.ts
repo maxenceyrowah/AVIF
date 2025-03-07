@@ -1,8 +1,8 @@
 export const MENUS = [
   {
     name: "Inspirer",
-    // path: "/inspirer",
-    path: "#",
+    path: "/inspirer",
+    // path: "#",
     submenu: [
       { name: "Témoignages & Portraits", path: "/inspirer/temoignages" },
       { name: "Podcasts", path: "/inspirer/podcasts" },

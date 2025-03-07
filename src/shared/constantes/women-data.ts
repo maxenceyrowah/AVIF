@@ -1,3 +1,5 @@
+import { Podcast } from "../models";
+
 export const INSPIRING_WOMEN = [
   {
     id: 1,
@@ -233,5 +235,30 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, [Nom] continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/Timite.jpeg",
+  },
+];
+
+export const RECENT_PODCASTS: Podcast[] = [
+  {
+    id: 1,
+    title: "Euphrasie Kouassi Yao",
+    host: "France 24",
+    guest: "Euphrasie Kouassi Yao",
+    duration: "12 min",
+    description:
+      "Titulaire de la chaire UNESCO sur les femmes et le pouvoir, elle évalue les efforts déployés pour les droits des femmes en Côte d'Ivoire",
+    image: "/assets/images/euphrasie-yaoImg2.jpg",
+    audio: "/assets/audio/euphrasieyao-france-24.m4a",
+  },
+  {
+    id: 2,
+    title: "Témoignage de Tia Philomène",
+    host: "AVIF",
+    guest: "TIA Philomene EPSE GLAO",
+    duration: "15 min",
+    description:
+      "L'histoire inspirante d'une femme qui a surmonté un mariage forcé à 17 ans pour devenir une pionnière du transport en Côte d'Ivoire",
+    image: "/assets/images/TiaPhilomeneImg.jpg",
+    audio: "/assets/audio/histoire-tia-glao.MP3",
   },
 ];
