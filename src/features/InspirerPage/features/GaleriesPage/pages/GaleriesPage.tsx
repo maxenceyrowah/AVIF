@@ -55,7 +55,7 @@ const GaleriesPage = () => {
               <img
                 src={woman.image}
                 alt={woman.name}
-                className="w-full h-40 sm:h-48 md:h-56 object-cover rounded-lg hover:shadow-xl transition-shadow duration-300"
+                className="w-full h-40 sm:h-48 md:h-56 object-contain rounded-lg hover:shadow-xl transition-shadow duration-300"
               />
               <motion.h1
                 initial={{ opacity: 0 }}

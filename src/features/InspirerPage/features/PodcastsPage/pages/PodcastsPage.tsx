@@ -1,7 +1,41 @@
 import { motion } from "motion/react";
 import Footer from "@/shared/components/Footer";
+import { useRef, useState, useEffect } from "react";
 
 const PodcastsPage = () => {
+  // Add state to track currently playing audio
+  const [currentlyPlaying, setCurrentlyPlaying] = useState<number | null>(null);
+  const audioRefs = useRef<(HTMLAudioElement | null)[]>([]);
+
+  // Effect to handle pausing other audio elements when one starts playing
+  useEffect(() => {
+    const handlePlay = (index: number) => {
+      // Pause all other audio elements
+      audioRefs.current.forEach((audio, i) => {
+        if (i !== index && audio) {
+          audio.pause();
+        }
+      });
+      setCurrentlyPlaying(index);
+    };
+
+    // Add event listeners to all audio elements
+    audioRefs.current.forEach((audio, index) => {
+      if (audio) {
+        audio.addEventListener("play", () => handlePlay(index));
+      }
+    });
+
+    // Cleanup event listeners
+    return () => {
+      audioRefs.current.forEach((audio, index) => {
+        if (audio) {
+          audio.removeEventListener("play", () => handlePlay(index));
+        }
+      });
+    };
+  }, []);
+
   const podcastData = [
     {
       name: "Euphrasie Kouassi Yao",
@@ -126,7 +160,20 @@ const PodcastsPage = () => {
 
                   {podcast.audio && (
                     <div className="w-full">
-                      <audio controls src={podcast.audio} className="w-full" />
+                      <div className="flex items-center">
+                        <audio 
+                          ref={(el) => (audioRefs.current[index] = el)} 
+                          controls 
+                          src={podcast.audio} 
+                          className="w-full"
+                          onPlay={() => setCurrentlyPlaying(index)}
+                        />
+                        {currentlyPlaying === index && (
+                          <span className="ml-3 text-green-400 animate-pulse">
+                            ▶ En lecture
+                          </span>
+                        )}
+                      </div>
                     </div>
                   )}
                 </motion.div>

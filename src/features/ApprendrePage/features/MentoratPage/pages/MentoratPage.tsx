@@ -72,15 +72,15 @@ const MentoratPage = () => {
 
             <motion.div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[1, 2, 3].map((index) => (
-                <div className="bg-white p-4 rounded-lg shadow-xl">
+                <div key={index} className="bg-white p-4 rounded-lg shadow-xl">
                   <div className="relative aspect-video">
                     <iframe
                       className="w-full h-full rounded-lg"
                       src={
                         [
-                          "https://www.youtube.com/embed/ZjfHzRUsRNo?start=2&autoplay=1&mute=1",
-                          "https://www.youtube.com/embed/2E_Kx-MBlEA?start=242&autoplay=1&mute=1",
-                          "https://www.youtube.com/embed/hWBaYfMfjjo?autoplay=1&mute=1",
+                          "https://www.youtube.com/embed/ZjfHzRUsRNo?start=2",
+                          "https://www.youtube.com/embed/2E_Kx-MBlEA?start=242",
+                          "https://www.youtube.com/embed/hWBaYfMfjjo",
                         ][index - 1]
                       }
                       title={
@@ -91,7 +91,7 @@ const MentoratPage = () => {
                         ][index - 1]
                       }
                       frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                       referrerPolicy="strict-origin-when-cross-origin"
                     ></iframe>
