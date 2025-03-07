@@ -16,12 +16,17 @@ const HeaderComponent = () => {
     }
   };
 
+  // New function to handle menu item clicks
+  const handleMenuItemClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="bg-black text-white fixed w-full z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <Link to="/acceuil" className="flex items-center">
+            <Link to="/acceuil" className="flex items-center" onClick={handleMenuItemClick}>
               <Shield className="h-8 w-8 text-primary" />
               <span className="ml-2 text-xl font-bold">AVIF</span>
             </Link>
@@ -93,12 +98,13 @@ const HeaderComponent = () => {
               {MENUS.map((item) => (
                 <div key={item.name} className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <p
-                      // to={item.path}
+                    <Link
+                      to={item.path}
                       className="text-white hover:text-primary transition py-2 flex-grow"
+                      onClick={handleMenuItemClick}
                     >
                       {item.name}
-                    </p>
+                    </Link>
                     <button
                       className="text-white hover:text-primary p-2"
                       onClick={() => toggleDropdown(item.name)}
@@ -117,6 +123,7 @@ const HeaderComponent = () => {
                           key={subItem.name}
                           to={subItem.path}
                           className="block py-2 text-gray-300 hover:text-yellow-400 transition-all duration-200"
+                          onClick={handleMenuItemClick}
                         >
                           {subItem.name}
                         </Link>
@@ -129,6 +136,7 @@ const HeaderComponent = () => {
                 to="/faire-un-don"
                 className="bg-yellow-400 text-black font-bold py-2 px-6 hover:bg-yellow-300 transition duration-300 w-full mt-4
                               hover:shadow-lg transform hover:scale-105 text-center block"
+                onClick={handleMenuItemClick}
               >
                 FAIRE UN DON
               </Link>
