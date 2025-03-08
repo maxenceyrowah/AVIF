@@ -1,9 +1,34 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
 
+import Footer from "@/shared/components/Footer";
 import { WOMEN_DATA } from "@/shared/constantes";
 import { IWomanGaleries } from "@/shared/models";
-import Footer from "@/shared/components/Footer";
+
+const splitIntoSentences = (text: string): string[][] => {
+  const paragraphs = text.split("\n\n");
+
+  return paragraphs.map((paragraph) => {
+    if (paragraph.length < 50 && !paragraph.includes(".")) {
+      return [paragraph];
+    }
+    return paragraph.split(/(?<=[.!?])\s+/).filter((s) => s.trim() !== "");
+  });
+};
+
+const groupSentencesByTwoInParagraphs = (
+  paragraphsWithSentences: string[][]
+): string[][] => {
+  return paragraphsWithSentences.map((sentences) => {
+    const groups: string[] = [];
+    for (let i = 0; i < sentences.length; i += 2) {
+      groups.push(
+        sentences[i] + (sentences[i + 1] ? " " + sentences[i + 1] : "")
+      );
+    }
+    return groups;
+  });
+};
 
 const GaleriesPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,12 +36,7 @@ const GaleriesPage = () => {
     null
   );
 
-  const openModal = (woman: {
-    image: string;
-    name: string;
-    fonction: string;
-    description: string;
-  }) => {
+  const openModal = (woman: IWomanGaleries) => {
     setSelectedWoman(woman);
     setIsOpen(true);
   };
@@ -32,9 +52,9 @@ const GaleriesPage = () => {
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-10 py-7"
+          className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-7 py-10"
         >
-          Gallerie des talents inspirants
+          Galerie des talents inspirants
         </motion.h1>
 
         <motion.div
@@ -51,31 +71,23 @@ const GaleriesPage = () => {
               transition={{ duration: 0.3, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               className="cursor-pointer p-4 text-center bg-white shadow-lg rounded-lg"
+              onClick={() => openModal(woman)}
             >
               <img
                 src={woman.image}
                 alt={woman.name}
                 className="w-full h-40 sm:h-48 md:h-56 object-contain rounded-lg hover:shadow-xl transition-shadow duration-300"
               />
-              <motion.h1
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-lg text-center font-bold mt-3"
-              >
+              <motion.h1 className="text-lg text-center font-bold mt-3">
                 {woman.name}
               </motion.h1>
-              <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-gray-600 text-center pb-4"
-              >
+              <motion.h2 className="text-gray-600 text-center pb-4">
                 {woman.fonction}
               </motion.h2>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-3 py-1.5 text-center text-white text-[15px] border border-gray-800 bg-yellow-600 rounded-lg hover:bg-yellow-700 transition duration-300"
-                onClick={() => openModal(woman)}
               >
                 Voir la biographie
               </motion.button>
@@ -110,11 +122,7 @@ const GaleriesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center p-4">
-                  <motion.h1
-                    initial={{ y: -20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    className="text-xl font-bold text-center"
-                  >
+                  <motion.h1 className="text-xl font-bold text-center">
                     {selectedWoman.name}
                   </motion.h1>
                   <motion.h2
@@ -125,15 +133,33 @@ const GaleriesPage = () => {
                   >
                     {selectedWoman.fonction}
                   </motion.h2>
-                  <motion.p
+
+                  <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
-                    className="text-gray-700 text-justify overflow-y-auto h-48 sm:h-60 md:h-72 p-3"
+                    className="text-gray-700 text-justify overflow-y-auto max-h-72 p-3"
                   >
-                    {selectedWoman.description}
-                  </motion.p>
+                    {groupSentencesByTwoInParagraphs(
+                      splitIntoSentences(selectedWoman.description)
+                    ).map((paragraph, paragraphIndex) => (
+                      <div
+                        key={`paragraph-${paragraphIndex}`}
+                        className={paragraphIndex > 0 ? "mt-6" : ""}
+                      >
+                        {paragraph.map((group, groupIndex) => (
+                          <div
+                            key={`${paragraphIndex}-${groupIndex}`}
+                            className={groupIndex > 0 ? "mt-4" : ""}
+                          >
+                            {group}
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </motion.div>
                 </div>
+
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
