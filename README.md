@@ -96,6 +96,7 @@ Contributors:
 
 - Project Team Members (Add names here)
 
+- KALO Soualio | kalosoualio6@gmail.com
 - Kouloman Youssouf COULIBALY | koulomanyoussouf1704@gmail.com
 - Akou Fulgence | fulgencebeugre49@gmail.com
 - Ouédraogo Salam Jean-Louis | salamjeanlouis8@gmail.com
