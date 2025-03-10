@@ -101,6 +101,7 @@ Contributors:
 - Ouédraogo Salam Jean-Louis | salamjeanlouis8@gmail.com
 - Kouame Koffi Yves Placide | kouamekoffiyves57@gmail.com
 - Radji Mohamed Salim | radjimohamed013@gmail.com
+- Ble ange verdier | angeverdierble@gmail.com
 
 To contribute to this project:
 
