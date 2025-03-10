@@ -102,6 +102,7 @@ Contributors:
 - Kouame Koffi Yves Placide | kouamekoffiyves57@gmail.com
 - Radji Mohamed Salim | radjimohamed013@gmail.com
 - Ble ange verdier | angeverdierble@gmail.com
+- Orounla Arsène | orounla54@gmail.com
 
 To contribute to this project:
 
