@@ -94,8 +94,15 @@ export const INSPIRING_WOMEN = [
     ],
   },
 ];
-
 export const WOMEN_DATA = [
+  {
+    name: "BOUADOU Epse KOUADIO N'Da Kadiatou",
+    fonction: "Cheffe de Cabinet du ministre",
+    description:
+      "Que ce soit en tant que femme au foyer, femme en entreprise, artisans ou militantes ; que ce soit en tant que mère, épouse ou jeune fille, la femme contribue, au quotidien, à la construction d’un monde de valeurs où s’épanouissent nos talents. Aujourd’hui plus que jamais, notre pays a besoin d’une plus grande valorisation de son rôle et de cette contribution afin qu’elle puisse offrir le meilleur d’elle-même. Cela signifie qu’ensemble, nous devons faire en sorte de promouvoir l'égalité des genres. Ensemble, nous devons agir pour éliminer les barrières qui empêchent les femmes et les filles de développer leur plein potentiel au profit de l’humanité. C’est à cette tâche que tous, nous devons nous atteler car, comme l’écrit le Secrétaire Général de l’UNESCO à l’occasion de la JIF 2025 : « L’épanouissement des femmes et des filles profite à tout le monde. »",
+    image: "/assets/images/cheffe_cabinet.jpeg",
+    buttonLabel: "Voir son message pour la journée",
+  },
   {
     name: "Sakanoko Siata Ouattara",
     fonction: "Cheffe de Projet E2C_TIC Cote d'Ivoire",
@@ -118,11 +125,12 @@ Mme Sakanoko Siata Ouattara croit fermement que l’éducation et la formation s
 "Chaque jeune formé est un avenir bâti. Mon ambition est de donner aux générations futures les outils nécessaires pour s’insérer dignement dans la société et contribuer activement au développement du pays." – Sakanoko Siata Ouattara
 Grâce à son leadership et sa vision, elle inspire de nombreux jeunes et professionnels du secteur de la formation en Côte d’Ivoire. Son travail continue d’impacter positivement des milliers de bénéficiaires, en particulier les jeunes femmes qui trouvent à travers ses actions une opportunité de s’émanciper et de s’insérer professionnellement.
 `,
-    image: "/assets/images/mdm_Sakanoko.jpg",
+    image: "/assets/images/madame_sakanoko.png",
+    buttonLabel: "Voir la biographie",
   },
   {
-    name: "Ana Khadidjah Touré",
-    fonction: "Directrice, Créatrice designer en infographie",
+    name: "Traoré Kadidjatou",
+    fonction: "Directrice de GOMYCODE",
     description: `Passionnée par l’infographie et la création visuelle, Traoré Kadidjatou est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle. Son sens de la créativité et de l’innovation lui permet de concevoir des affiches publicitaires percutantes, aidant ainsi les marques à améliorer leur visibilité et à dynamiser leurs ventes.
 Dotée d’un excellent relationnel et d’un esprit collaboratif, Kadidjatou sait mobiliser une équipe autour d’un objectif commun, apportant à chaque projet une vision unique et originale.
 Parcours et Expériences
@@ -134,6 +142,7 @@ En intégrant le programme E2C, Kadidjatou a renforcé ses compétences en desig
 Toujours en quête d’évolution, elle ambitionne de lancer sa propre agence de design graphique, où elle pourra accompagner les marques dans la création de leur identité visuelle et leur stratégie de communication.
 `,
     image: "/assets/images/Kady.jpg",
+    buttonLabel: "Voir la biographie",
   },
   {
     name: "Etilié Philomene",
@@ -148,6 +157,7 @@ En 2020, elle est nommée proviseure du lycée Technique de Cocody, un établiss
 
 Madame Etilié Philomène incarne l’engagement, l’innovation et l’excellence. Elle est convaincue que l'éducation est la clé du développement personnel et national, et elle œuvre sans relâche pour offrir aux jeunes Ivoiriens une éducation de qualité, capable de répondre aux besoins d’un monde en constante évolution.`,
     image: "/assets/images/proviseure.jpg",
+    buttonLabel: "Voir la biographie",
   },
   {
     name: "Essis Marie-Helène",
@@ -179,6 +189,7 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/dele.jpg",
+    buttonLabel: "Voir la biographie",
   },
   {
     name: "Koné Assata",
@@ -210,6 +221,7 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation, continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/Kone.jpeg",
+    buttonLabel: "Voir la biographie",
   },
   {
     name: "Timité Mariam",
@@ -241,9 +253,9 @@ En tant que mentore et formatrice, elle accompagne les nouveaux développeurs da
 Conclusion
 Grâce à son expertise, son engagement et sa passion pour l’innovation,  continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
     image: "/assets/images/Timite.jpeg",
+    buttonLabel: "Voir la biographie",
   },
 ];
-
 export const RECENT_PODCASTS: Podcast[] = [
   {
     id: 1,
@@ -268,7 +280,6 @@ export const RECENT_PODCASTS: Podcast[] = [
     audio: "/assets/audio/histoire-tia-glao.MP3",
   },
 ];
-
 export const PODCASTS_DATA = [
   {
     name: "Euphrasie Kouassi Yao",

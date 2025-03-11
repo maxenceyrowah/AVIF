@@ -3,6 +3,7 @@ export interface IWomanGaleries {
   fonction: string;
   description: string;
   image: string;
+  buttonLabel: string;
 }
 
 export interface Podcast {
