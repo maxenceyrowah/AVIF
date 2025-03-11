@@ -141,7 +141,7 @@ Ambitions et Perspectives
 En intégrant le programme E2C, Kadidjatou a renforcé ses compétences en design et en communication visuelle. Elle aspire à développer sa carrière dans le domaine du branding et du marketing digital, en mettant son esprit créatif et sa maîtrise des outils graphiques au service d’entreprises désireuses de se démarquer.
 Toujours en quête d’évolution, elle ambitionne de lancer sa propre agence de design graphique, où elle pourra accompagner les marques dans la création de leur identité visuelle et leur stratégie de communication.
 `,
-    image: "/assets/images/Kady.jpg",
+    image: "/assets/images/directrice_gomycode.jpeg",
     buttonLabel: "Voir la biographie",
   },
   {
