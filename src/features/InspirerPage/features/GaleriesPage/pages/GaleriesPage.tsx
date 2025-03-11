@@ -5,31 +5,6 @@ import Footer from "@/shared/components/Footer";
 import { WOMEN_DATA } from "@/shared/constantes";
 import { IWomanGaleries } from "@/shared/models";
 
-const splitIntoSentences = (text: string): string[][] => {
-  const paragraphs = text.split("\n\n");
-
-  return paragraphs.map((paragraph) => {
-    if (paragraph.length < 50 && !paragraph.includes(".")) {
-      return [paragraph];
-    }
-    return paragraph.split(/(?<=[.!?])\s+/).filter((s) => s.trim() !== "");
-  });
-};
-
-const groupSentencesByTwoInParagraphs = (
-  paragraphsWithSentences: string[][]
-): string[][] => {
-  return paragraphsWithSentences.map((sentences) => {
-    const groups: string[] = [];
-    for (let i = 0; i < sentences.length; i += 2) {
-      groups.push(
-        sentences[i] + (sentences[i + 1] ? " " + sentences[i + 1] : "")
-      );
-    }
-    return groups;
-  });
-};
-
 const GaleriesPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedWoman, setSelectedWoman] = useState<IWomanGaleries | null>(
@@ -69,27 +44,30 @@ const GaleriesPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-              className="cursor-pointer p-4 text-center bg-white shadow-lg rounded-lg"
-              onClick={() => openModal(woman)}
+              className="cursor-pointer p-4 text-center bg-white shadow-lg rounded-lg flex flex-col h-full"
             >
               <img
                 src={woman.image}
                 alt={woman.name}
-                className="w-full h-40 sm:h-48 md:h-56 object-contain rounded-lg hover:shadow-xl transition-shadow duration-300"
+                className="w-full h-40 sm:h-48 md:h-56 object-contain rounded-lg transition-shadow duration-300"
               />
               <motion.h1 className="text-lg text-center font-bold mt-3">
                 {woman.name}
               </motion.h1>
-              <motion.h2 className="text-gray-600 text-center pb-4">
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-gray-600 text-center"
+              >
                 {woman.fonction}
               </motion.h2>
+              <div className="flex-grow" />
               <motion.button
-                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-3 py-1.5 text-center text-white text-[15px] border border-gray-800 bg-yellow-600 rounded-lg hover:bg-yellow-700 transition duration-300"
+                className="w-full mt-4 px-4 py-2 text-center text-secondary text-[15px] border border-gray-100 bg-primary rounded-lg hover:bg-secondary hover:text-primary transition-all duration-300"
+                onClick={() => openModal(woman)}
               >
-                Voir la biographie
+                {woman.buttonLabel}
               </motion.button>
             </motion.div>
           ))}
@@ -118,52 +96,43 @@ const GaleriesPage = () => {
                     animate={{ opacity: 1 }}
                     src={selectedWoman.image}
                     alt={selectedWoman.name}
-                    className="w-full h-56 sm:h-64 md:h-80 object-center rounded-lg"
+                    className="w-full h-56 sm:h-64 md:h-80 object-contain rounded-lg shadow-md"
                   />
                 </div>
                 <div className="flex flex-col items-center p-4">
-                  <motion.h1 className="text-xl font-bold text-center">
+                  <motion.h1
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    className="text-2xl font-bold text-center text-gray-800"
+                  >
                     {selectedWoman.name}
                   </motion.h1>
                   <motion.h2
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1 }}
-                    className="text-gray-600 text-center py-2"
+                    className="text-lg text-gray-600 text-center py-2"
                   >
                     {selectedWoman.fonction}
                   </motion.h2>
-
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
-                    className="text-gray-700 text-justify overflow-y-auto max-h-72 p-3"
+                    className="relative w-full h-48 sm:h-60 md:h-72"
                   >
-                    {groupSentencesByTwoInParagraphs(
-                      splitIntoSentences(selectedWoman.description)
-                    ).map((paragraph, paragraphIndex) => (
-                      <div
-                        key={`paragraph-${paragraphIndex}`}
-                        className={paragraphIndex > 0 ? "mt-6" : ""}
-                      >
-                        {paragraph.map((group, groupIndex) => (
-                          <div
-                            key={`${paragraphIndex}-${groupIndex}`}
-                            className={groupIndex > 0 ? "mt-4" : ""}
-                          >
-                            {group}
-                          </div>
-                        ))}
-                      </div>
-                    ))}
+                    <div className="absolute inset-0 overflow-y-auto custom-scrollbar">
+                      <p className="text-gray-700 text-justify leading-relaxed p-4 whitespace-pre-line">
+                        {selectedWoman.description}
+                      </p>
+                    </div>
                   </motion.div>
                 </div>
 
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="absolute top-2 right-2 text-white bg-gray-800 p-1 rounded-full"
+                  className="absolute top-2 right-2 text-white bg-gray-800 p-2 rounded-full hover:bg-gray-700 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   ✖
