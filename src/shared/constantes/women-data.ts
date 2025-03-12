@@ -104,27 +104,32 @@ export const WOMEN_DATA = [
     buttonLabel: "Voir son message pour la journée",
   },
   {
-    name: "Sakanoko Siata Ouattara",
-    fonction: "Cheffe de Projet E2C_TIC Cote d'Ivoire",
-    description: `
-Un parcours au service du développement
-Madame Sakanoko Siata Ouattara est une figure clé du développement de la formation professionnelle en Côte d'Ivoire. Engagée dans l’accompagnement des jeunes vers l’emploi, elle œuvre pour leur insertion à travers des programmes adaptés aux réalités du marché du travail.
-Titulaire d’un Diplôme d’Expert en Finance et Économie (2020) et d’un Diplôme de Spécialiste en Politiques Publiques et Administration (2021) de la Bircham International University, elle a acquis une solide expertise dans la gestion de projets de formation et d’insertion.
-Sa carrière est marquée par son engagement en faveur de l’École de la Deuxième Chance (E2C), un programme gouvernemental visant à offrir une opportunité aux jeunes sans emploi ou en quête de reconversion professionnelle.
+    name: "Madame Sakanoko Siata",
+    fonction: "Cheffe de Projet E2C_TIC",
+    description: `Un parcours au service du développement 
 
-Une cheffe de projet au service des jeunes et des femmes
-Dans le cadre de ses fonctions à l’Agence Nationale de la Formation Professionnelle (ANFP), Mme Sakanoko joue un rôle stratégique dans la mise en place de projets visant à améliorer l’employabilité des jeunes, notamment dans les secteurs du numérique et des métiers en forte demande.
-Son action se traduit par :
-•	La coordination de formations adaptées aux besoins du marché du travail.
-•	L’accompagnement des bénéficiaires vers une insertion durable, notamment en les mettant en relation avec des entreprises partenaires.
-•	La promotion de l’égalité des chances, en mettant un accent particulier sur l’inclusion des femmes dans les programmes de formation.
-Elle a également représenté la Côte d’Ivoire dans des événements internationaux, notamment dans le Programme de Leadership en EFTP de l’UNESCO-UNEVOC, où elle a plaidé pour un renforcement des capacités des jeunes et des femmes à travers la formation.
+Madame Sakanoko Siata Ouattara est une figure clé du développement de la formation professionnelle en Côte d'Ivoire. Engagée dans l'accompagnement des jeunes vers l'amélioration de leur employabilite, elle œuvre pour leur insertion à travers des programmes adaptés aux réalités du marché du travail. 
 
-Vision et impact
-Mme Sakanoko Siata Ouattara croit fermement que l’éducation et la formation sont les piliers d’un développement inclusif et durable. Son engagement au sein du programme E2C et d’autres initiatives démontre sa volonté de transformer positivement la vie des jeunes Ivoiriens.
-"Chaque jeune formé est un avenir bâti. Mon ambition est de donner aux générations futures les outils nécessaires pour s’insérer dignement dans la société et contribuer activement au développement du pays." – Sakanoko Siata Ouattara
-Grâce à son leadership et sa vision, elle inspire de nombreux jeunes et professionnels du secteur de la formation en Côte d’Ivoire. Son travail continue d’impacter positivement des milliers de bénéficiaires, en particulier les jeunes femmes qui trouvent à travers ses actions une opportunité de s’émanciper et de s’insérer professionnellement.
-`,
+Inspecteur de l'Enseignement Technique et de la Formation Professionnelle option Gestion Commerciale, Mme Sakanoko Siata Ouattara est présentement en poste au Cabinet du Ministère de l'Enseignement Technique de la Formation Professionnelle et de l'Apprentissage. Titulaire d'un Master en Management et Stratégies d'Entreprises (2016) de la Fédération Européenne des Ecoles,  elle est spécialiste certifiée de l' OIT en suivi et évaluation de Politiques, Programmes et Projets. 
+
+Elle a acquis une solide expertise dans la gestion de projets de formation et d'insertion. Sa carrière est marquée par son engagement en faveur de l'École de la Deuxième Chance (E2C), un programme gouvernemental visant à offrir une opportunité aux jeunes sans emploi ou en quête de reconversion professionnelle. 
+
+Une cheffe de projet au service des jeunes et des femmes.
+
+Dans le cadre de ses fonctions à l'Agence Nationale de la Formation Professionnelle (AGEFOP), Mme Sakanoko joue un rôle stratégique dans la mise en place de projets visant à améliorer l'employabilité des jeunes, notamment dans les secteurs de l'Artisanat, des Mines, de la Grande Distribution et des métiers à forte demande.
+
+ Son action se traduit par :
+ • La coordination de formations adaptées aux besoins du marché du travail.
+ • L'accompagnement des bénéficiaires vers une insertion durable, notamment en les mettant en relation avec des entreprises partenaires.
+ • La promotion de l'égalité des chances, en mettant un accent particulier sur l'inclusion des femmes dans les programmes de formation. 
+
+Elle a également représenté la Côte d'Ivoire dans des événements internationaux, notamment dans le Programme de Leadership en EFTP de l'UNESCO-UNEVOC, où elle a plaidé pour un renforcement des capacités des jeunes et des femmes à travers la formation. 
+
+Vision et impact 
+
+Mme Sakanoko Siata Ouattara croit fermement que l'éducation et la formation sont les piliers d'un développement inclusif et durable. Son engagement au sein du programme E2C et d'autres initiatives démontrent sa volonté de transformer positivement la vie des jeunes Ivoiriens. "Chaque jeune formé est un avenir bâti. Mon ambition est de donner aux générations futures les outils nécessaires pour s'insérer dignement dans la société et contribuer activement au développement du pays."
+
+Sakanoko Siata Ouattara, grâce à son sens de responsabilités et son dévouement, inspire de nombreux jeunes et professionnels du secteur de la formation en Côte d'Ivoire. Son travail continue d'impacter positivement des centaines de bénéficiaires, en particulier les jeunes femmes qui trouvent à travers ses actions une opportunité de s'émanciper, et de s'insérer professionnellement.`,
     image: "/assets/images/madame_sakanoko.png",
     buttonLabel: "Voir la biographie",
   },
