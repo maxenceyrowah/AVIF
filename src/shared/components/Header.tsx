@@ -26,7 +26,11 @@ const HeaderComponent = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <Link to="/acceuil" className="flex items-center" onClick={handleMenuItemClick}>
+            <Link
+              to="/acceuil"
+              className="flex items-center"
+              onClick={handleMenuItemClick}
+            >
               <Shield className="h-8 w-8 text-primary" />
               <span className="ml-2 text-xl font-bold">AVIF</span>
             </Link>
@@ -43,24 +47,28 @@ const HeaderComponent = () => {
                   className="text-white hover:text-primary transition py-2 flex items-center"
                 >
                   {item.name}
-                  <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+                  {item.submenu && item.submenu.length > 0 && (
+                    <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+                  )}
                 </Link>
 
-                <div
-                  className="absolute left-0 mt-0 w-48 bg-black border border-gray-800 shadow-lg z-10 
+                {item.submenu && item.submenu.length > 0 && (
+                  <div
+                    className="absolute left-0 mt-0 w-48 bg-black border border-gray-800 shadow-lg z-10 
                                 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                                 transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 text-lg"
-                >
-                  {item.submenu.map((subItem) => (
-                    <Link
-                      key={subItem.name}
-                      to={subItem.path}
-                      className="block px-4 py-2 text-white hover:bg-gray-800 hover:text-primary transition-all duration-200"
-                    >
-                      {subItem.name}
-                    </Link>
-                  ))}
-                </div>
+                  >
+                    {item.submenu.map((subItem) => (
+                      <Link
+                        key={subItem.name}
+                        to={subItem.path}
+                        className="block px-4 py-2 text-white hover:bg-gray-800 hover:text-primary transition-all duration-200"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </nav>
@@ -105,31 +113,35 @@ const HeaderComponent = () => {
                     >
                       {item.name}
                     </Link>
-                    <button
-                      className="text-white hover:text-primary p-2"
-                      onClick={() => toggleDropdown(item.name)}
-                    >
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-300 ${
-                          activeDropdown === item.name ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
+                    {item.submenu && item.submenu.length > 0 && (
+                      <button
+                        className="text-white hover:text-primary p-2"
+                        onClick={() => toggleDropdown(item.name)}
+                      >
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform duration-300 ${
+                            activeDropdown === item.name ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                    )}
                   </div>
-                  {activeDropdown === item.name && (
-                    <div className="pl-4 space-y-2 border-l border-gray-700 animate-slideDown">
-                      {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          to={subItem.path}
-                          className="block py-2 text-gray-300 hover:text-yellow-400 transition-all duration-200"
-                          onClick={handleMenuItemClick}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                  {item.submenu &&
+                    item.submenu.length > 0 &&
+                    activeDropdown === item.name && (
+                      <div className="pl-4 space-y-2 border-l border-gray-700 animate-slideDown">
+                        {item.submenu.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.path}
+                            className="block py-2 text-gray-300 hover:text-yellow-400 transition-all duration-200"
+                            onClick={handleMenuItemClick}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                 </div>
               ))}
               <Link

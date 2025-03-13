@@ -48,6 +48,5 @@ export const MENUS = [
   {
     name: "À propos",
     path: "/apropos",
-    submenu: [],
   },
 ];
