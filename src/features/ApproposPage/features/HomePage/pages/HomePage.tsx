@@ -48,7 +48,7 @@ function HomePage() {
               gestion des bases de données et l'intégration des API. Nous
               aspirons à maîtriser les technologies modernes et à les utiliser
               pour résoudre des problèmes réels et apporter des solutions
-              efficaces.""
+              efficaces."
             </p>
           </div>
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce">
