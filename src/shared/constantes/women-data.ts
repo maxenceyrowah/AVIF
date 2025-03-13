@@ -260,6 +260,70 @@ Grâce à son expertise, son engagement et sa passion pour l’innovation,  cont
     image: "/assets/images/Timite.jpeg",
     buttonLabel: "Voir la biographie",
   },
+  {
+    name: "Coulibaly Yenin",
+    fonction: "Informaticienne Développeuse web FullStack  certifiée  ",
+    description: `Mariam est une développeuse web Full-Stack certifiée, passionnée par la création d’applications dynamiques et performantes. Avec une solide formation en informatique et plusieurs années d’expérience dans le développement web, elle a su se démarquer par son expertise technique et sa capacité à concevoir des solutions innovantes adaptées aux besoins des entreprises et des utilisateurs.
+
+Parcours académique et certifications
+Dès son plus jeune âge, s’est intéressée aux technologies numériques et à la programmation. Elle a suivi des études en informatique, obtenant un diplôme en développement logiciel et en ingénierie informatique. Toujours avide d’apprendre, elle a poursuivi son parcours en obtenant des certifications reconnues dans le domaine du développement web Full-Stack, attestant de sa maîtrise des langages et frameworks les plus utilisés tels que JavaScript, TypeScript, React.js, Node.js, Next.js, et MongoDB.
+
+Sa volonté de perfectionnement l’a également poussée à se spécialiser dans des domaines tels que les architectures cloud, les bases de données NoSQL et SQL, ainsi que les bonnes pratiques DevOps. Grâce à ces compétences, elle est en mesure de concevoir des applications robustes et scalables répondant aux exigences des entreprises modernes.
+
+Expérience professionnelle
+Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
+
+Dans son rôle, elle maîtrise aussi bien le développement front-end, en créant des interfaces utilisateur réactives et intuitives avec React.js, Next.js et Bootstrap, que le développement back-end, où elle construit des API performantes en utilisant Node.js, Express et MongoDB. Son expertise couvre également l’intégration des bonnes pratiques en matière de sécurité web, de performance et d’accessibilité.
+
+Compétences et spécialités
+Développement Full-Stack : HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL.
+Conception d'architectures backend optimisées et scalables.
+Gestion de bases de données relationnelles et NoSQL.
+Expérience avec les outils CI/CD, Docker, Git et GitHub Actions.
+Respect des standards de sécurité, performance et accessibilité web.
+Collaboration avec des équipes Agile et utilisation de méthodologies Scrum/Kanban.
+Engagement et vision
+Au-delà de son rôle technique,  est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
+
+En tant que mentore et formatrice, elle accompagne les nouveaux développeurs dans leur apprentissage, les aidant à acquérir des compétences solides et à évoluer dans un domaine en constante mutation.
+
+Conclusion
+Grâce à son expertise, son engagement et sa passion pour l’innovation,  continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
+    image: "/assets/team/IMG_8535.jpg",
+    buttonLabel: "Voir la biographie",
+  },
+  {
+    name: "Kouassi Edwige",
+    fonction: "Informaticienne Développeuse web FullStack  certifiée  ",
+    description: `Mariam est une développeuse web Full-Stack certifiée, passionnée par la création d’applications dynamiques et performantes. Avec une solide formation en informatique et plusieurs années d’expérience dans le développement web, elle a su se démarquer par son expertise technique et sa capacité à concevoir des solutions innovantes adaptées aux besoins des entreprises et des utilisateurs.
+
+Parcours académique et certifications
+Dès son plus jeune âge, s’est intéressée aux technologies numériques et à la programmation. Elle a suivi des études en informatique, obtenant un diplôme en développement logiciel et en ingénierie informatique. Toujours avide d’apprendre, elle a poursuivi son parcours en obtenant des certifications reconnues dans le domaine du développement web Full-Stack, attestant de sa maîtrise des langages et frameworks les plus utilisés tels que JavaScript, TypeScript, React.js, Node.js, Next.js, et MongoDB.
+
+Sa volonté de perfectionnement l’a également poussée à se spécialiser dans des domaines tels que les architectures cloud, les bases de données NoSQL et SQL, ainsi que les bonnes pratiques DevOps. Grâce à ces compétences, elle est en mesure de concevoir des applications robustes et scalables répondant aux exigences des entreprises modernes.
+
+Expérience professionnelle
+Avec plusieurs années d’expérience en tant que développeuse web Full-Stack, a travaillé sur divers projets, allant de la conception de sites vitrines interactifs à des plateformes SaaS complexes. Elle a collaboré avec des start-ups, des PME et des grandes entreprises, contribuant à l’élaboration de solutions digitales optimisées.
+
+Dans son rôle, elle maîtrise aussi bien le développement front-end, en créant des interfaces utilisateur réactives et intuitives avec React.js, Next.js et Bootstrap, que le développement back-end, où elle construit des API performantes en utilisant Node.js, Express et MongoDB. Son expertise couvre également l’intégration des bonnes pratiques en matière de sécurité web, de performance et d’accessibilité.
+
+Compétences et spécialités
+Développement Full-Stack : HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL.
+Conception d'architectures backend optimisées et scalables.
+Gestion de bases de données relationnelles et NoSQL.
+Expérience avec les outils CI/CD, Docker, Git et GitHub Actions.
+Respect des standards de sécurité, performance et accessibilité web.
+Collaboration avec des équipes Agile et utilisation de méthodologies Scrum/Kanban.
+Engagement et vision
+Au-delà de son rôle technique,  est une fervente défenseuse du partage de connaissances et de la diversité dans la tech. Elle participe régulièrement à des conférences, hackathons et meetups, où elle échange avec d’autres professionnels et contribue à la communauté des développeurs.
+
+En tant que mentore et formatrice, elle accompagne les nouveaux développeurs dans leur apprentissage, les aidant à acquérir des compétences solides et à évoluer dans un domaine en constante mutation.
+
+Conclusion
+Grâce à son expertise, son engagement et sa passion pour l’innovation,  continue de repousser les limites du développement web. Sa capacité à combiner compétences techniques, esprit analytique et sens du design fait d’elle une informaticienne accomplie, prête à relever tous les défis du digital.`,
+    image: "/assets/team/KOUASSI.jpg",
+    buttonLabel: "Voir la biographie",
+  },
 ];
 export const RECENT_PODCASTS: Podcast[] = [
   {
