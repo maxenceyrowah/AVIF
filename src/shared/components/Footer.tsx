@@ -2,9 +2,9 @@ const FooterComponent = () => {
   return (
     <footer className="bg-black text-white py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="flex items-center justify-center text-center w-full mx-auto">
           {/* a propos */}
-          <div>
+          <div className="lg:w-[40rem]">
             <h3 className="text-xl font-bold mb-6 text-primary">À PROPOS</h3>
             <p className="text-gray-400 mb-6">
               Nous sommes un groupe d'étudiants passionnés qui avons créé ce
@@ -60,90 +60,6 @@ const FooterComponent = () => {
                 </svg>
               </a>
             </div>
-          </div>
-
-          {/* agir */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-primary">AGIR</h3>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Faire un don
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Signer une pétition
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Devenir bénévole
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Participer à un événement
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Rejoindre une campagne
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* explorer */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-primary">EXPLORER</h3>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Droits des femmes
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Campagnes
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Ressources
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Rapports
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400 transition">
-                  Actualités
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* constact */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-primary">CONTACT</h3>
-            <ul className="space-y-3 text-gray-400">
-              <li>LPLIA, Trechville</li>
-              <li>contact@e2c.org</li>
-            </ul>
-
-            <form className="mt-6">
-              <input
-                type="email"
-                placeholder="Votre email"
-                className="w-full bg-gray-900 text-white px-4 py-3 mb-2 focus:outline-none"
-              />
-              <button className="w-full bg-primary text-black font-bold py-3 hover:bg-yellow-300 transition duration-300">
-                S'ABONNER
-              </button>
-            </form>
           </div>
         </div>
 
