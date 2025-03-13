@@ -56,32 +56,6 @@ function HomePage() {
           </div>
         </motion.section>
 
-        {/* Chef de Projet */}
-        <motion.section
-          variants={itemVariants}
-          className="container mx-auto px-4 py-8 sm:py-16 bg-white rounded-2xl shadow-2xl p-6 sm:p-12 my-8"
-        >
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
-            <div className="w-full lg:w-1/2">
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-4 sm:p-8 shadow-xl">
-                <div className="flex flex-col items-center">
-                  <img
-                    src="/assets/team/Mr.png"
-                    className="w-32 sm:w-48 h-auto object-cover relative z-10 ring-4 ring-white rounded-lg"
-                    alt="Mr"
-                  />
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2 mt-4 uppercase">
-                    Yrowah maxence
-                  </h3>
-                  <p className="text-lg sm:text-xl text-amber-600 font-semibold mb-4 lg:w-[28rem] text-center">
-                    Instructeur Software Developer Bootcamp chez GoMyCode
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.section>
-
         {/* Notre Equipe */}
         <motion.section
           variants={itemVariants}
