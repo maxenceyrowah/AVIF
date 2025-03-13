@@ -70,11 +70,11 @@ function HomePage() {
                     className="w-32 sm:w-48 h-auto object-cover relative z-10 ring-4 ring-white rounded-lg"
                     alt="Mr"
                   />
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2 mt-4">
-                    YROWAH Maxence
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2 mt-4 uppercase">
+                    Yrowah maxence
                   </h3>
-                  <p className="text-lg sm:text-xl text-amber-600 font-semibold mb-4">
-                    Notre instructeur & mentor
+                  <p className="text-lg sm:text-xl text-amber-600 font-semibold mb-4 lg:w-[28rem] text-center">
+                    Instructeur Software Developer Bootcamp chez GoMyCode
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ function HomePage() {
                     />
                   </motion.div>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 text-center uppercase">
                   {member.name}
                 </h3>
                 <p className="text-amber-600 font-medium mb-3 text-center">
