@@ -38,6 +38,7 @@ const routes = () => {
         ...features.defendreRoutes,
         ...features.apprendreRoutes,
         ...features.engagerRoutes,
+        ...features.aproposRoutes
       ],
     },
     { path: "*", element: <features.NotFoundPage /> },

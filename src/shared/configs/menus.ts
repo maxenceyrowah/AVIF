@@ -45,4 +45,9 @@ export const MENUS = [
       { name: "Partenaires & ONG", path: "/engager/partenaires" },
     ],
   },
+  {
+    name: "À propos",
+    path: "/apropos",
+    submenu: [],
+  },
 ];
