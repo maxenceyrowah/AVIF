@@ -94,8 +94,6 @@ yarn preview
 
 Contributors:
 
-- Project Team Members (Add names here)
-
 - Kouloman Youssouf COULIBALY | koulomanyoussouf1704@gmail.com
 - Akou Fulgence | fulgencebeugre49@gmail.com
 - Ouédraogo Salam Jean-Louis | salamjeanlouis8@gmail.com
