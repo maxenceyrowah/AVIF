@@ -134,7 +134,7 @@ Sakanoko Siata Ouattara, grâce à son sens de responsabilités et son dévoueme
     buttonLabel: "Voir la biographie",
   },
   {
-    name: "Traoré Kadidjatou",
+    name: "Ana Khadijah Toure",
     fonction: "Directrice de GOMYCODE",
     description: `Passionnée par l’infographie et la création visuelle, Traoré Kadidjatou est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle. Son sens de la créativité et de l’innovation lui permet de concevoir des affiches publicitaires percutantes, aidant ainsi les marques à améliorer leur visibilité et à dynamiser leurs ventes.
 Dotée d’un excellent relationnel et d’un esprit collaboratif, Kadidjatou sait mobiliser une équipe autour d’un objectif commun, apportant à chaque projet une vision unique et originale.
