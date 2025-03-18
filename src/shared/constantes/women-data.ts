@@ -136,14 +136,14 @@ Sakanoko Siata Ouattara, grâce à son sens de responsabilités et son dévoueme
   {
     name: "Ana Khadijah Toure",
     fonction: "Directrice de GOMYCODE",
-    description: `Passionnée par l’infographie et la création visuelle, Traoré Kadidjatou est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle. Son sens de la créativité et de l’innovation lui permet de concevoir des affiches publicitaires percutantes, aidant ainsi les marques à améliorer leur visibilité et à dynamiser leurs ventes.
-Dotée d’un excellent relationnel et d’un esprit collaboratif, Kadidjatou sait mobiliser une équipe autour d’un objectif commun, apportant à chaque projet une vision unique et originale.
+    description: `Passionnée par l’infographie et la création visuelle, Ana Khadijah Toure est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle. Son sens de la créativité et de l’innovation lui permet de concevoir des affiches publicitaires percutantes, aidant ainsi les marques à améliorer leur visibilité et à dynamiser leurs ventes.
+Dotée d’un excellent relationnel et d’un esprit collaboratif, Ana Khadijah Toure sait mobiliser une équipe autour d’un objectif commun, apportant à chaque projet une vision unique et originale.
 Parcours et Expériences
 •	2018 - 2024 : Vente de produits cosmétiques, pagnes et accessoires pour femmes
 •	2021 - 2022 : Bénévole au GS le Merina
 Grâce à son expérience dans la vente, elle comprend l’importance du marketing visuel et sait comment capter l’attention des consommateurs à travers des supports graphiques efficaces.
 Ambitions et Perspectives
-En intégrant le programme E2C, Kadidjatou a renforcé ses compétences en design et en communication visuelle. Elle aspire à développer sa carrière dans le domaine du branding et du marketing digital, en mettant son esprit créatif et sa maîtrise des outils graphiques au service d’entreprises désireuses de se démarquer.
+En intégrant le programme E2C, Ana Khadijah Toure a renforcé ses compétences en design et en communication visuelle. Elle aspire à développer sa carrière dans le domaine du branding et du marketing digital, en mettant son esprit créatif et sa maîtrise des outils graphiques au service d’entreprises désireuses de se démarquer.
 Toujours en quête d’évolution, elle ambitionne de lancer sa propre agence de design graphique, où elle pourra accompagner les marques dans la création de leur identité visuelle et leur stratégie de communication.
 `,
     image: "/assets/images/directrice_gomycode.jpeg",
