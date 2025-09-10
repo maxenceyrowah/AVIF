@@ -32,7 +32,10 @@ export const TEAM_MEMBERS = [
   {
     name: "GBOKO ANZOUMANAN AMARA",
     role: "Developpeur full stack",
-    image: "/assets/team/AMARA.jpg",
+    statut:"En Poste",
+    Entreprise: "SC DIGITAL",
+    image: "/assets/team/amaraG.jpg",
+    portfolio: "https://my-next-portfolio-pi.vercel.app/"
   },
   {
     name: "Kouakou Younouss Assane",
