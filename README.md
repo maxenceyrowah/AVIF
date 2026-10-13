@@ -101,6 +101,7 @@ Contributors:
 - Radji Mohamed Salim | radjimohamed013@gmail.com
 - Ble ange verdier | angeverdierble@gmail.com
 - Orounla Arsène | orounla54@gmail.com
+- Amara Gboko Anzoumanan | gboko.amara@uvci.edu.ci
 
 To contribute to this project:
 

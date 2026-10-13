@@ -1,8 +1,9 @@
 import { Users, Trophy, ChevronDown } from "lucide-react";
-import { motion } from "motion/react";
+import { m, motion } from "motion/react";
 
 import Footer from "@/shared/components/Footer";
 import { TEAM_MEMBERS } from "@/shared/constantes";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const containerVariants = {
@@ -75,7 +76,12 @@ function HomePage() {
                 variants={itemVariants}
                 className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-4 sm:p-6 shadow-lg hover:scale-105 transition-transform"
               >
-                <div className="relative mb-4 sm:mb-6">
+                <Link
+                  to={member.portfolio ? member.portfolio : "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group mb-4 sm:mb-6 block"
+                >
                   <motion.div
                     className="aspect-square overflow-hidden rounded-full w-32 sm:w-40 mx-auto"
                     whileHover={{ y: -10 }}
@@ -87,13 +93,26 @@ function HomePage() {
                       loading="lazy"
                     />
                   </motion.div>
-                </div>
+
+                  {/* Tooltip */}
+                  <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-black text-white text-sm rounded px-2 py-1 whitespace-nowrap pointer-events-none">
+                    {member.name} → voir portfolio
+                  </div>
+                </Link>
+
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 text-center uppercase">
                   {member.name}
                 </h3>
-                <p className="text-amber-600 font-medium mb-3 text-center">
-                  {member.role}
-                </p>
+
+                {member.statut ? (<p className="text-amber-600 font-medium mb-3 text-center">
+                  {member?.statut || ""} de :  {member.role}
+                </p>) :
+                  (<p className="text-amber-600 font-medium mb-3 text-center">
+                    {member.role}
+                  </p>)}
+                {member?.Entreprise && (<p className="text-amber-600 font-medium mb-3 text-center">
+                  à : {member?.Entreprise}
+                </p>)}
               </motion.div>
             ))}
           </div>
